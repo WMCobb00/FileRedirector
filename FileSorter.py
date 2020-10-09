@@ -1,9 +1,11 @@
 '''
+**********************
 Author: Billy Cobb
 Project: FileSorter
 Created on: 10/2/2020
-Disc: Automatic file sorter for file organization. Files must be
+Discription: Automatic file sorter for file organization. Files must be
       titled with a file tag somewhere in the file name.
+**********************
 '''
 
 import os
