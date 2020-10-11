@@ -19,11 +19,10 @@ main_dir_path = '.'
 
 while True:
 
-      with os.scandir(main_dir_path) as i:  # creates an itterator for items in directory
+      with os.scandir(main_dir_path) as i:  # creates an itterator i for items in directory
             for item in i:
                   for prefix in file_tags:
                         if item.name.__contains__(prefix) and item.is_file():
-                              print(item.name)  # to be removed, used for debugging
                               os.rename(main_dir_path+ '/'+ item.name, main_dir_path+ '/'+ prefix+ '/'+ item.name)  # moves file to proper directory
                               break  # proceeds to next item
 
